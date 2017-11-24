@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    title sodakit - front
+    meta(charset="UTF-8")
+    meta(name="description" content="sodakit page")
+    meta(name="keywords" content="key, words")
+    meta(name="author" content="Mateusz Stomski")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    script(src='https://use.fontawesome.com/ef3515f844.js')
+    link(rel='stylesheet', href='./styles/main.css')
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900", rel="stylesheet")
+    script(src='./scripts/boundle.js')
+  body
+    header.header
+      include header.pug
+    main.main
+      include main.pug
+    footer.footer
+      include footer.pug

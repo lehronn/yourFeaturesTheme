@@ -1,16 +1,4 @@
-// ============== variables
-
-$font-color: #ffffff
-$bg-color: #ffffff
-$hover-color: #07CAE7
-$gray1: gray
-$gray2: #313332
-$gray3: #252726
-$orange-hover: rgba(242, 131, 84, 0.6)
-$aqua: #07CAE7
-
-// ============== styles
-
+//global styles
 .row
     zoom: 1
     &:after
@@ -136,7 +124,7 @@ nav
             font-weight: 100
 
 // ========== central text
-.central-text-container 
+.central-text-container
     padding: 15px
     margin: 10px 0
 
@@ -160,26 +148,25 @@ nav
     justify-content: space-around
     flex-wrap: wrap
 
-    .gallery-icons
-        background-color: rgba(0, 0, 0, 0.4)
-        position: absolute
-        margin-top: -210px
-        left: 0
-        right: 0
-        text-align: center
-        line-height: 200px
-        height: 200px
-        transition: all 2s ease
-
-        .fa
-            size: 20px
-            line-height: 30px
-            width: 30px
-            height: 30px
-            color: &gray2
-            background-color: $bg-color
-            border-radius: 5px
-            cursor: pointer
+.gallery-icons
+  background-color: rgba(0, 0, 0, 0.4)
+  position: absolute
+  margin-top: -210px
+  left: 0
+  right: 0
+  text-align: center
+  line-height: 200px
+  height: 200px
+  transition: all 2s ease
+  .fa
+    size: 20px
+    line-height: 30px
+    width: 30px
+    height: 30px
+    color: $gray2
+    background-color: $bg-color
+    border-radius: 5px
+    cursor: pointer
 
 .gallery-image
     height: 200px
@@ -276,7 +263,7 @@ nav
     color: $font-color
     padding: 5px
     background-color: rgba(80, 85, 82, 0.6)
-    
+
 .subhero-paragraph-2
     font-style: italic
     color: $font-color
@@ -382,7 +369,7 @@ p.content
 
 .col-m-6
     flex: 50%
-        
+
 .col-m-7
     flex: 58.33%
 
@@ -400,107 +387,3 @@ p.content
 
 .col-m-12
     flex: 100%
-
-
-@media (max-width: 899px)
-    nav
-        height: 400px
-
-    .nav-list
-        display: block
-
-    .nav-list-element
-        float: none
-
-    .slogan
-        min-width: 300px
-        max-width: 380px
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-
-    .benefits-container
-        flex-direction: column
-
-    .subhero
-        display: flex
-        flex-direction: column
-        flex-wrap: wrap
-
-    .subhero-image
-        display: flex
-        flex-direction: column
-        flex-wrap: wrap
-
-    .stats
-        display: flex
-        flex-direction: column
-
-    .footer-menu
-        display: flex
-        flex-direction: column
-
-    .footer-copywright p
-        line-height: 55px
-        margin-bottom: 0px
-
-    .menu
-        display: flex
-        flex-direction: column
-
-    .gallery
-        width: 100%
-
-    .gallery-image
-        height: 200px
-        display: flex
-        flex-direction: column
-
-    .subhero-image
-        display: none
-
-    .subhero-text
-        margin: 0 auto
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        display: inline
-
-    .footer-header
-        &:after
-            border: 0
-            margin: 0
-            width: 0
-
-@media (min-width: 900px)
-    // ========== for desktops
-    .benefits-container
-        flex-direction: row
-
-    .people-container
-        display: flex
-        flex-direction: row
-    .footer-menu
-        display: flex
-        flex-direction: row
-
-    .footer-copywright p
-        line-height: 55px
-        margin-bottom: 0px
-
-    .gallery
-        width: 100%
-        display: flex
-        flex-direction: row
-        justify-content: space-around
-        flex-wrap: wrap
-
-    .gallery-image
-        height: 200px
-        width: 100%
-
-    .gallery-container
-        justify-content: space-between
-        max-height: 100%
