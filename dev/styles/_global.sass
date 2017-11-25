@@ -143,40 +143,32 @@ nav
 // ========== gallery
 .gallery
     width: 100%
-    display: flex
-    flex-direction: row
-    justify-content: space-around
-    flex-wrap: wrap
 
-.gallery-icons
-  background-color: rgba(0, 0, 0, 0.4)
-  position: absolute
-  margin-top: -210px
-  left: 0
-  right: 0
-  text-align: center
-  line-height: 200px
-  height: 200px
-  transition: all 2s ease
-  .fa
+.gallery-image
+    width: 100%
+    height: 200px
+    display: block
+
+.gallery .gallery-icons
+    background-color: rgba(0, 0, 0, 0.4)
+    position: absolute
+    margin-top: -210px
+    left: 0
+    right: 0
+    text-align: center
+    line-height: 200px
+    height: 200px
+    transition: all 2s ease
+
+.gallery .gallery-icons .fa
     size: 20px
     line-height: 30px
     width: 30px
     height: 30px
-    color: $gray2
-    background-color: $bg-color
+    color: #303030
+    background-color: white
     border-radius: 5px
     cursor: pointer
-
-.gallery-image
-    height: 200px
-    margin: 4px
-
-.gallery-container
-    display: flex
-    flex-wrap: nowrap
-    justify-content: space-between
-    align-items: center
 
 .gallery > div > div:hover .gallery-icons
     margin-top: 0
@@ -184,46 +176,6 @@ nav
 .gallery [class*="col-"]
     position: relative
     overflow: hidden
-
-.img-1
-  @extend .gallery-image
-  background-image: url(../images/landscape-nature-forest-trees.jpg)
-
-.img-2
-  @extend .gallery-image
-  background-image: url(../images/pexels-photo-285173.jpeg)
-
-.img-3
-  @extend .gallery-image
-  background-image: url(../images/pexels-photo-673920.jpeg)
-
-.img-4
-  @extend .gallery-image
-  background-image: url(../images/pexels-photo-674743.jpeg)
-
-.img-5
-  @extend .gallery-image
-  background-image: url(../images/pexels-photo-688659.jpeg)
-
-.img-6
-  @extend .gallery-image
-  background-image: url(../images/pexels-photo-680013.jpeg)
-
-.img-7
-  @extend .gallery-image
-  background-image: url(../images/pexels-photo-676578.jpeg)
-
-.img-8
-  @extend .gallery-image
-  background-image: url(../images/pexels-photo-689326.jpeg)
-
-.img-9
-  @extend .gallery-image
-  background-image: url(../images/pexels-photo-689367.jpeg)
-
-.img-10
-  @extend .gallery-image
-  background-image: url(../images/pexels-photo-674860.jpeg)
 
 // ========== people
 .people
