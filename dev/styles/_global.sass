@@ -142,40 +142,45 @@ nav
 
 // ========== gallery
 .gallery
-    width: 100%
+  width: 100%
+
+.gallery-container
+  width: 100%
+  display: flex
+  flex-wrap: nowrap
+  justify-content: space-between
+  align-items: center
 
 .gallery-image
-    width: 100%
-    height: 200px
-    display: block
+  height: 200px
 
 .gallery .gallery-icons
-    background-color: rgba(0, 0, 0, 0.4)
-    position: absolute
-    margin-top: -210px
-    left: 0
-    right: 0
-    text-align: center
-    line-height: 200px
-    height: 200px
-    transition: all 2s ease
+  background-color: rgba(0, 0, 0, 0.4)
+  position: absolute
+  margin-top: -210px
+  left: 0
+  right: 0
+  text-align: center
+  line-height: 200px
+  height: 200px
+  transition: all 2s ease
 
 .gallery .gallery-icons .fa
-    size: 20px
-    line-height: 30px
-    width: 30px
-    height: 30px
-    color: #303030
-    background-color: white
-    border-radius: 5px
-    cursor: pointer
+  size: 20px
+  line-height: 30px
+  width: 30px
+  height: 30px
+  color: #303030
+  background-color: white
+  border-radius: 5px
+  cursor: pointer
 
-.gallery > div > div:hover .gallery-icons
-    margin-top: 0
+.gallery > div:hover .gallery-icons
+  margin-top: 0
 
 .gallery [class*="col-"]
-    position: relative
-    overflow: hidden
+  position: relative
+  overflow: hidden
 
 // ========== people
 .people
