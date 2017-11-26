@@ -143,9 +143,12 @@ nav
 // ========== gallery
 .gallery
   width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  flex-wrap: wrap
 
 .gallery-container
-  width: 100%
   display: flex
   flex-wrap: nowrap
   justify-content: space-between
@@ -153,6 +156,7 @@ nav
 
 .gallery-image
   height: 200px
+  background-size: cover
 
 .gallery .gallery-icons
   background-color: rgba(0, 0, 0, 0.4)
@@ -163,7 +167,7 @@ nav
   text-align: center
   line-height: 200px
   height: 200px
-  transition: all 2s ease
+  transition: all 1s ease
 
 .gallery .gallery-icons .fa
   size: 20px
@@ -174,6 +178,7 @@ nav
   background-color: white
   border-radius: 5px
   cursor: pointer
+  margin: 15px
 
 .gallery > div:hover .gallery-icons
   margin-top: 0
